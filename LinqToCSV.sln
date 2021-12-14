@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToCSV", "LinqToCSV\LinqToCSV.csproj", "{7F33EC74-265C-454D-BA62-3EC15963840C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToCSV.Tests", "LinqToCSV.Tests\LinqToCSV.Tests.csproj", "{71D65DC1-7C86-4CC9-980E-98847F0DD793}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F33EC74-265C-454D-BA62-3EC15963840C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F33EC74-265C-454D-BA62-3EC15963840C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F33EC74-265C-454D-BA62-3EC15963840C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F33EC74-265C-454D-BA62-3EC15963840C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D65DC1-7C86-4CC9-980E-98847F0DD793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D65DC1-7C86-4CC9-980E-98847F0DD793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D65DC1-7C86-4CC9-980E-98847F0DD793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D65DC1-7C86-4CC9-980E-98847F0DD793}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA13D397-4420-4211-80CB-9A56AF9D3922}
+	EndGlobalSection
+EndGlobal
