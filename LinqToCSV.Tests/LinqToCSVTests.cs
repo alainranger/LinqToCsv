@@ -10,6 +10,8 @@ namespace LinqToCSV.Tests
     [TestClass()]
     public class LinqToCSVTests
     {
+        const string expected_result_files = "expected_result_files";
+
         [TestMethod()]
         public void ToCsvTest_WithoutHeader()
         {
@@ -22,7 +24,7 @@ namespace LinqToCSV.Tests
 
             var csv = todoList.ToCsv();
 
-            var expectedResult = System.IO.File.ReadAllText("expected_result_files\\ToCsvTest_WithoutHeader.txt");
+            var expectedResult = System.IO.File.ReadAllText(System.IO.Path.Combine(expected_result_files, "ToCsvTest_WithoutHeader.txt"));
 
             Assert.AreEqual(expectedResult, csv);
         }
@@ -39,7 +41,7 @@ namespace LinqToCSV.Tests
 
             var csv = todoList.ToCsv(true);
 
-            var expectedResult = System.IO.File.ReadAllText("expected_result_files\\ToCsvTest_WithHeader.txt");
+            var expectedResult = System.IO.File.ReadAllText(System.IO.Path.Combine(expected_result_files, "ToCsvTest_WithHeader.txt"));
 
             Assert.AreEqual(expectedResult, csv);
         }
@@ -56,7 +58,7 @@ namespace LinqToCSV.Tests
 
             var csv = todoList.ToCsv(true);
 
-            var expectedResult = System.IO.File.ReadAllText("expected_result_files\\ToCsvTest_WithLinqToCSVHeaderAttribute.txt");
+            var expectedResult = System.IO.File.ReadAllText(System.IO.Path.Combine(expected_result_files, "ToCsvTest_WithLinqToCSVHeaderAttribute.txt"));
 
             Assert.AreEqual(expectedResult, csv);
         }
@@ -73,7 +75,7 @@ namespace LinqToCSV.Tests
 
             var csv = todoList.ToCsv(true);
 
-            var expectedResult = System.IO.File.ReadAllText("expected_result_files\\ToCsvTest_WithLinqToCSVHeaderAttribute_Sorted.txt");
+            var expectedResult = System.IO.File.ReadAllText(System.IO.Path.Combine(expected_result_files, "ToCsvTest_WithLinqToCSVHeaderAttribute_Sorted.txt"));
 
             Assert.AreEqual(expectedResult, csv);
         }
